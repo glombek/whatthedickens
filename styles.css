@@ -1,0 +1,53 @@
+body, header h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    margin: 0 auto;
+    width: 30em;
+    max-width: 100%;
+    font-family: 'Homemade Apple', cursive;
+    
+    text-align: center;
+    
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.75em 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+header img {
+    float:right;
+    height: 6em;
+}
+
+blockquote {
+    position:relative;
+    padding: 1em;
+    display: inline-block;
+}
+
+blockquote:before, blockquote:after {
+    content: "\"";
+    font-size: 2em;
+    font-family: 'Homemade Apple', cursive;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+blockquote:after {
+    left:auto;
+    top:0;
+    right: 0;
+}
+
+blockquote cite {
+    display:block;
+}
