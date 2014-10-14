@@ -3,19 +3,41 @@ body, header h1 {
 }
 
 header {
-    margin: 0 auto;
-    width: 30em;
+
+        position: relative;
+    border-bottom: 1px solid black;
+}
+
+header,main,footer {
+    width: 45em;
     max-width: 100%;
+    margin: 0 auto;
+}
+main {
+    overflow:hidden;
+    margin: 2em auto;
+}
+footer {
+    clear:both;
+    text-align:center;
+    border-top: 1px solid black;
+    
+    padding: 1em 0;
+}
+
+header, h2, h3, h4, h5, h6 {
     font-family: 'Homemade Apple', cursive;
-    
+    font-weight: normal;
     text-align: center;
-    
-    font-size: 1.5em;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 0.75em 0;
+}
+header p {
+    
+    font-size: 1.5em;
 }
 
 p {
@@ -24,30 +46,45 @@ p {
 
 header img {
     float:right;
-    height: 6em;
+    height: 9em;
 }
 
 blockquote {
-    position:relative;
-    padding: 1em;
-    display: inline-block;
+    margin: 0;
+    display: inline;
 }
 
 blockquote:before, blockquote:after {
     content: "\"";
     font-size: 2em;
     font-family: 'Homemade Apple', cursive;
-    position: absolute;
-    left:0;
-    top:0;
+    position:relative;
+    top:0.2em;
+    line-height:0.5em;
 }
 
-blockquote:after {
-    left:auto;
-    top:0;
-    right: 0;
+#quotes {
+    margin:0;
+    padding:0;
 }
 
-blockquote cite {
-    display:block;
+#quotes>li {
+    display: none;
+    text-align: center;
+}
+
+#quotes>li.current {
+    display: block;
+}
+
+.answers {
+    margin: 2em 0;
+}
+
+.answers li {
+    margin:0;
+    padding:0;
+    display: block;
+    float: left;
+    width: 33%;
 }
